@@ -3,7 +3,7 @@
 namespace Nebula\Http\Controllers\Auth;
 
 use Inertia\Inertia;
-use Intertia\Response;
+use Inertia\Response;
 use Illuminate\Http\Request;
 use Nebula\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
