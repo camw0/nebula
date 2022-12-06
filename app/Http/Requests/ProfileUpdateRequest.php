@@ -3,8 +3,8 @@
 namespace Nebula\Http\Requests;
 
 use Nebula\Models\User;
-use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+use Illuminate\Foundation\Http\FormRequest;
 
 class ProfileUpdateRequest extends FormRequest
 {

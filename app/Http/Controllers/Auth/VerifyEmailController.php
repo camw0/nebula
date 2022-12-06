@@ -2,9 +2,9 @@
 
 namespace Nebula\Http\Controllers\Auth;
 
-use Nebula\Http\Controllers\Controller;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Http\RedirectResponse;
+use Nebula\Http\Controllers\Controller;
 use Nebula\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 

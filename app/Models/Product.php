@@ -8,14 +8,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
  * Nebula\Models\Product
- * 
+ *
  * @property int $id
  * @property string $name
  * @property string|null $description
  * @property float $cost
  * @property int $group_id
  * @property int $stock_amount
- * 
+ *
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  */

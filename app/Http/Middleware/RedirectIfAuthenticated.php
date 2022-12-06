@@ -2,10 +2,10 @@
 
 namespace Nebula\Http\Middleware;
 
-use Nebula\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Nebula\Providers\RouteServiceProvider;
 
 class RedirectIfAuthenticated
 {

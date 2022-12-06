@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Nebula'),
 
     /*
     |--------------------------------------------------------------------------
@@ -191,7 +191,6 @@ return [
          */
         Nebula\Providers\AppServiceProvider::class,
         Nebula\Providers\AuthServiceProvider::class,
-        // Nebula\Providers\BroadcastServiceProvider::class,
         Nebula\Providers\EventServiceProvider::class,
         Nebula\Providers\RouteServiceProvider::class,
 

@@ -5,10 +5,10 @@ namespace Nebula\Http\Controllers\Auth;
 use Inertia\Inertia;
 use Inertia\Response;
 use Illuminate\Http\Request;
-use Nebula\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Route;
+use Nebula\Http\Controllers\Controller;
 use Nebula\Providers\RouteServiceProvider;
 use Nebula\Http\Requests\Auth\LoginRequest;
 

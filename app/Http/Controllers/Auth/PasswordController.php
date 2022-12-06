@@ -3,9 +3,9 @@
 namespace Nebula\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
-use Nebula\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
+use Nebula\Http\Controllers\Controller;
 use Illuminate\Validation\Rules\Password;
 
 class PasswordController extends Controller
