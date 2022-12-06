@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Nebula\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 

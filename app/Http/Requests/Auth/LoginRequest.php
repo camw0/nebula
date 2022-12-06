@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Auth;
+namespace Nebula\Http\Requests\Auth;
 
 use Illuminate\Support\Str;
 use Illuminate\Auth\Events\Lockout;

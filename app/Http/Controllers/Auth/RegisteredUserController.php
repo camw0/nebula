@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Nebula\Http\Controllers\Auth;
 
 use Inertia\Inertia;
-use App\Models\User;
+use Nebula\Models\User;
 use Inertia\Response;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules;
-use App\Http\Controllers\Controller;
+use Nebula\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Auth\Events\Registered;
-use App\Providers\RouteServiceProvider;
+use Nebula\Providers\RouteServiceProvider;
 use Illuminate\Validation\ValidationException;
 
 class RegisteredUserController extends Controller

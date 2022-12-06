@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Nebula\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use Nebula\Http\Controllers\Controller;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Http\RedirectResponse;
-use App\Providers\RouteServiceProvider;
+use Nebula\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 class VerifyEmailController extends Controller

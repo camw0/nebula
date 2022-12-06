@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Nebula\Providers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;

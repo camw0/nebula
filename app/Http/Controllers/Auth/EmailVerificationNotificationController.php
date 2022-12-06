@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Nebula\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Nebula\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
-use App\Providers\RouteServiceProvider;
+use Nebula\Providers\RouteServiceProvider;
 
 class EmailVerificationNotificationController extends Controller
 {

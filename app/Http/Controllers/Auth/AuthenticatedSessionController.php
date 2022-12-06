@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Nebula\Http\Controllers\Auth;
 
 use Inertia\Inertia;
 use Intertia\Response;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Nebula\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Route;
-use App\Providers\RouteServiceProvider;
-use App\Http\Requests\Auth\LoginRequest;
+use Nebula\Providers\RouteServiceProvider;
+use Nebula\Http\Requests\Auth\LoginRequest;
 
 class AuthenticatedSessionController extends Controller
 {

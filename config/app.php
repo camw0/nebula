@@ -189,11 +189,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Nebula\Providers\AppServiceProvider::class,
+        Nebula\Providers\AuthServiceProvider::class,
+        // Nebula\Providers\BroadcastServiceProvider::class,
+        Nebula\Providers\EventServiceProvider::class,
+        Nebula\Providers\RouteServiceProvider::class,
 
     ],
 
