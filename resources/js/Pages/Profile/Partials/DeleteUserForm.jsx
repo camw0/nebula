@@ -7,7 +7,7 @@ import SecondaryButton from '@/Components/SecondaryButton';
 import TextInput from '@/Components/TextInput';
 import { useForm } from '@inertiajs/inertia-react';
 
-export default function DeleteUserForm({ className }) {
+export default ({ className }) => {
     const [confirmingUserDeletion, setConfirmingUserDeletion] = useState(false);
     const passwordInput = useRef();
 

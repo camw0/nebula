@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import ApplicationLogo from '@/Components/ApplicationLogo';
-import Dropdown from '@/Components/Dropdown';
 import NavLink from '@/Components/NavLink';
-import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
+import Dropdown from '@/Components/Dropdown';
 import { Link } from '@inertiajs/inertia-react';
+import ApplicationLogo from '@/Components/ApplicationLogo';
+import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 
-export default function Authenticated({ auth, header, children }) {
+export default ({ auth, header, description, children }) => {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
 
     return (
@@ -25,6 +25,11 @@ export default function Authenticated({ auth, header, children }) {
                                     Dashboard
                                 </NavLink>
                             </div>
+                            <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <NavLink href={route('profile.edit')} active={route().current('profile.edit')}>
+                                    Account
+                                </NavLink>
+                            </div>
                         </div>
 
                         <div className="hidden sm:flex sm:items-center sm:ml-6">
@@ -36,7 +41,7 @@ export default function Authenticated({ auth, header, children }) {
                                                 type="button"
                                                 className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150"
                                             >
-                                                {auth.user.name}
+                                                Hello, {auth.user.name}
 
                                                 <svg
                                                     className="ml-2 -mr-0.5 h-4 w-4"
@@ -117,7 +122,10 @@ export default function Authenticated({ auth, header, children }) {
 
             {header && (
                 <header className="bg-white dark:bg-gray-800 shadow">
-                    <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">{header}</div>
+                    <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        <h2 className="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">{header}</h2>
+                        {description && <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{description}</p>}
+                    </div>
                 </header>
             )}
 
