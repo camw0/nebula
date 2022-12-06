@@ -1,22 +1,22 @@
-import { Fragment } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
+import { Fragment } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
 
 export default ({ children, show = false, maxWidth = '2xl', closeable = true, onClose = () => { } }) => {
-    const close = () => {
-        if (closeable) {
-            onClose();
-        }
-    };
+  const close = () => {
+    if (closeable) {
+      onClose()
+    }
+  }
 
-    const maxWidthClass = {
-        sm: 'sm:max-w-sm',
-        md: 'sm:max-w-md',
-        lg: 'sm:max-w-lg',
-        xl: 'sm:max-w-xl',
-        '2xl': 'sm:max-w-2xl',
-    }[maxWidth];
+  const maxWidthClass = {
+    sm: 'sm:max-w-sm',
+    md: 'sm:max-w-md',
+    lg: 'sm:max-w-lg',
+    xl: 'sm:max-w-xl',
+    '2xl': 'sm:max-w-2xl'
+  }[maxWidth]
 
-    return (
+  return (
         <Transition show={show} as={Fragment} leave="duration-200">
             <Dialog
                 as="div"
@@ -52,5 +52,5 @@ export default ({ children, show = false, maxWidth = '2xl', closeable = true, on
                 </Transition.Child>
             </Dialog>
         </Transition>
-    );
+  )
 }

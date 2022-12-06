@@ -10,4 +10,4 @@ export default ({ type = 'button', className = '', processing, children, onClick
     >
         {children}
     </button>
-);
+)

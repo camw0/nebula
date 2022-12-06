@@ -1,4 +1,4 @@
-import { Link } from '@inertiajs/inertia-react';
+import { Link } from '@inertiajs/inertia-react'
 
 export default ({ method = 'get', as = 'a', href, active = false, children }) => (
     <Link
@@ -12,4 +12,4 @@ export default ({ method = 'get', as = 'a', href, active = false, children }) =>
     >
         {children}
     </Link>
-);
+)

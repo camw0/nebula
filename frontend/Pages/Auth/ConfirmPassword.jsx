@@ -1,33 +1,33 @@
-import { useEffect } from 'react';
-import TextInput from '@/Components/TextInput';
-import GuestLayout from '@/Layouts/GuestLayout';
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import { Head, useForm } from '@inertiajs/inertia-react';
+import { useEffect } from 'react'
+import TextInput from '@/Components/TextInput'
+import GuestLayout from '@/Layouts/GuestLayout'
+import InputError from '@/Components/InputError'
+import InputLabel from '@/Components/InputLabel'
+import PrimaryButton from '@/Components/PrimaryButton'
+import { Head, useForm } from '@inertiajs/inertia-react'
 
 export default () => {
-    const { data, setData, post, processing, errors, reset } = useForm({
-        password: '',
-    });
+  const { data, setData, post, processing, errors, reset } = useForm({
+    password: ''
+  })
 
-    useEffect(() => {
-        return () => {
-            reset('password');
-        };
-    }, []);
+  useEffect(() => {
+    return () => {
+      reset('password')
+    }
+  }, [])
 
-    const onHandleChange = (event) => {
-        setData(event.target.name, event.target.value);
-    };
+  const onHandleChange = (event) => {
+    setData(event.target.name, event.target.value)
+  }
 
-    const submit = (e) => {
-        e.preventDefault();
+  const submit = (e) => {
+    e.preventDefault()
 
-        post(route('password.confirm'));
-    };
+    post(route('password.confirm'))
+  }
 
-    return (
+  return (
         <GuestLayout>
             <Head title="Confirm Password" />
             <div className="mb-4 text-sm text-gray-600 dark:text-gray-400">
@@ -54,5 +54,5 @@ export default () => {
                 </div>
             </form>
         </GuestLayout>
-    );
+  )
 }

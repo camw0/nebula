@@ -1,25 +1,25 @@
-import TextInput from '@/Components/TextInput';
-import GuestLayout from '@/Layouts/GuestLayout';
-import InputError from '@/Components/InputError';
-import PrimaryButton from '@/Components/PrimaryButton';
-import { Head, useForm } from '@inertiajs/inertia-react';
+import TextInput from '@/Components/TextInput'
+import GuestLayout from '@/Layouts/GuestLayout'
+import InputError from '@/Components/InputError'
+import PrimaryButton from '@/Components/PrimaryButton'
+import { Head, useForm } from '@inertiajs/inertia-react'
 
 export default ({ status }) => {
-    const { data, setData, post, processing, errors } = useForm({
-        email: '',
-    });
+  const { data, setData, post, processing, errors } = useForm({
+    email: ''
+  })
 
-    const onHandleChange = (event) => {
-        setData(event.target.name, event.target.value);
-    };
+  const onHandleChange = (event) => {
+    setData(event.target.name, event.target.value)
+  }
 
-    const submit = (e) => {
-        e.preventDefault();
+  const submit = (e) => {
+    e.preventDefault()
 
-        post(route('password.email'));
-    };
+    post(route('password.email'))
+  }
 
-    return (
+  return (
         <GuestLayout>
             <Head title="Forgot Password" />
             <div className="mb-4 text-sm text-gray-600 dark:text-gray-400">
@@ -45,5 +45,5 @@ export default ({ status }) => {
                 </div>
             </form>
         </GuestLayout>
-    );
+  )
 }

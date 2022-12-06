@@ -10,4 +10,4 @@ export default ({ type = 'submit', className = '', processing, children, onClick
     >
         {children}
     </button>
-);
+)

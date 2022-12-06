@@ -1,17 +1,17 @@
-import GuestLayout from '@/Layouts/GuestLayout';
-import PrimaryButton from '@/Components/PrimaryButton';
-import { Head, Link, useForm } from '@inertiajs/inertia-react';
+import GuestLayout from '@/Layouts/GuestLayout'
+import PrimaryButton from '@/Components/PrimaryButton'
+import { Head, Link, useForm } from '@inertiajs/inertia-react'
 
 export default ({ status }) => {
-    const { post, processing } = useForm();
+  const { post, processing } = useForm()
 
-    const submit = (e) => {
-        e.preventDefault();
+  const submit = (e) => {
+    e.preventDefault()
 
-        post(route('verification.send'));
-    };
+    post(route('verification.send'))
+  }
 
-    return (
+  return (
         <GuestLayout>
             <Head title="Email Verification" />
             <div className="mb-4 text-sm text-gray-600 dark:text-gray-400">
@@ -38,5 +38,5 @@ export default ({ status }) => {
                 </div>
             </form>
         </GuestLayout>
-    );
+  )
 }

@@ -1,36 +1,36 @@
-import { useEffect } from 'react';
-import Checkbox from '@/Components/Checkbox';
-import TextInput from '@/Components/TextInput';
-import GuestLayout from '@/Layouts/GuestLayout';
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import { Head, Link, useForm } from '@inertiajs/inertia-react';
+import { useEffect } from 'react'
+import Checkbox from '@/Components/Checkbox'
+import TextInput from '@/Components/TextInput'
+import GuestLayout from '@/Layouts/GuestLayout'
+import InputError from '@/Components/InputError'
+import InputLabel from '@/Components/InputLabel'
+import PrimaryButton from '@/Components/PrimaryButton'
+import { Head, Link, useForm } from '@inertiajs/inertia-react'
 
 export default ({ status, canResetPassword }) => {
-    const { data, setData, post, processing, errors, reset } = useForm({
-        email: '',
-        password: '',
-        remember: '',
-    });
+  const { data, setData, post, processing, errors, reset } = useForm({
+    email: '',
+    password: '',
+    remember: ''
+  })
 
-    useEffect(() => {
-        return () => {
-            reset('password');
-        };
-    }, []);
+  useEffect(() => {
+    return () => {
+      reset('password')
+    }
+  }, [])
 
-    const onHandleChange = (event) => {
-        setData(event.target.name, event.target.type === 'checkbox' ? event.target.checked : event.target.value);
-    };
+  const onHandleChange = (event) => {
+    setData(event.target.name, event.target.type === 'checkbox' ? event.target.checked : event.target.value)
+  }
 
-    const submit = (e) => {
-        e.preventDefault();
+  const submit = (e) => {
+    e.preventDefault()
 
-        post(route('login'));
-    };
+    post(route('login'))
+  }
 
-    return (
+  return (
         <GuestLayout>
             <Head title="Log in" />
             {status && <div className="mb-4 font-medium text-sm text-green-600">{status}</div>}
@@ -83,5 +83,5 @@ export default ({ status, canResetPassword }) => {
                 </div>
             </form>
         </GuestLayout>
-    );
+  )
 }

@@ -9,8 +9,8 @@ on:
       - "dev"
 
 jobs:
-  php:
-    name: PHP
+  backend:
+    name: Backend (PHP)
     runs-on: ubuntu-20.04
     steps:
       - name: Code Checkout
@@ -32,3 +32,21 @@ jobs:
 
       - name: Run PHP CS Fixer
         run: vendor/bin/php-cs-fixer fix app --dry-run --diff
+
+  frontend:
+    name: Frontend (JS)
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Run ESlint
+        run: npm run lint

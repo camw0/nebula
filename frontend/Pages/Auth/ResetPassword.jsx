@@ -1,36 +1,36 @@
-import { useEffect } from 'react';
-import TextInput from '@/Components/TextInput';
-import GuestLayout from '@/Layouts/GuestLayout';
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import { Head, useForm } from '@inertiajs/inertia-react';
+import { useEffect } from 'react'
+import TextInput from '@/Components/TextInput'
+import GuestLayout from '@/Layouts/GuestLayout'
+import InputError from '@/Components/InputError'
+import InputLabel from '@/Components/InputLabel'
+import PrimaryButton from '@/Components/PrimaryButton'
+import { Head, useForm } from '@inertiajs/inertia-react'
 
 export default ({ token, email }) => {
-    const { data, setData, post, processing, errors, reset } = useForm({
-        token: token,
-        email: email,
-        password: '',
-        password_confirmation: '',
-    });
+  const { data, setData, post, processing, errors, reset } = useForm({
+    token,
+    email,
+    password: '',
+    password_confirmation: ''
+  })
 
-    useEffect(() => {
-        return () => {
-            reset('password', 'password_confirmation');
-        };
-    }, []);
+  useEffect(() => {
+    return () => {
+      reset('password', 'password_confirmation')
+    }
+  }, [])
 
-    const onHandleChange = (event) => {
-        setData(event.target.name, event.target.value);
-    };
+  const onHandleChange = (event) => {
+    setData(event.target.name, event.target.value)
+  }
 
-    const submit = (e) => {
-        e.preventDefault();
+  const submit = (e) => {
+    e.preventDefault()
 
-        post(route('password.store'));
-    };
+    post(route('password.store'))
+  }
 
-    return (
+  return (
         <GuestLayout>
             <Head title="Reset Password" />
             <form onSubmit={submit}>
@@ -81,5 +81,5 @@ export default ({ token, email }) => {
                 </div>
             </form>
         </GuestLayout>
-    );
+  )
 }

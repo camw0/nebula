@@ -1,8 +1,8 @@
-import { Head } from '@inertiajs/inertia-react';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+import { Head } from '@inertiajs/inertia-react'
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout'
 
 export default (props) => {
-    return (
+  return (
         <AuthenticatedLayout
             auth={props.auth}
             errors={props.errors}
@@ -19,5 +19,5 @@ export default (props) => {
                 </div>
             </div>
         </AuthenticatedLayout>
-    );
+  )
 }
