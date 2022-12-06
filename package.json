@@ -1,7 +1,7 @@
 {
     "private": false,
     "scripts": {
-        "dev": "vite --host",
+        "dev": "vite build -w",
         "build": "vite build",
         "lint": "eslint ./frontend/**/*.{js,jsx} --fix --ext .js,.jsx"
     },
