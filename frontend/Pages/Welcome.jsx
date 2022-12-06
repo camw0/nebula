@@ -8,18 +8,18 @@ export default (props) => (
             <div className="fixed top-0 right-0 px-6 py-4 sm:block">
                 {props.auth.user
                   ? (
-                    <Link href={route('dashboard')} className="text-sm text-gray-700 dark:text-gray-500 underline">
+                    <Link href={window.route('dashboard')} className="text-sm text-gray-700 dark:text-gray-500 underline">
                         Dashboard
                     </Link>
                     )
                   : (
                     <>
-                        <Link href={route('login')} className="text-sm text-gray-700 dark:text-gray-500 underline">
+                        <Link href={window.route('login')} className="text-sm text-gray-700 dark:text-gray-500 underline">
                             Log in
                         </Link>
 
                         <Link
-                            href={route('register')}
+                            href={window.route('register')}
                             className="ml-4 text-sm text-gray-700 dark:text-gray-500 underline"
                         >
                             Register
@@ -165,7 +165,7 @@ export default (props) => (
 
                             <div className="ml-12">
                                 <div className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as{' '}
+                                    Laravel&apos;s robust library of first-party tools and libraries, such as{' '}
                                     <a href="https://forge.laravel.com" className="underline">
                                         Forge
                                     </a>

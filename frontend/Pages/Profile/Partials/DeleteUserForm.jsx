@@ -1,6 +1,6 @@
 import Modal from '@/Components/Modal'
-import { useRef, useState } from 'react'
 import TextInput from '@/Components/TextInput'
+import React, { useRef, useState } from 'react'
 import InputError from '@/Components/InputError'
 import InputLabel from '@/Components/InputLabel'
 import { useForm } from '@inertiajs/inertia-react'
@@ -29,7 +29,7 @@ export default ({ className }) => {
   const deleteUser = (e) => {
     e.preventDefault()
 
-    destroy(route('profile.destroy'), {
+    destroy(window.route('profile.destroy'), {
       preserveScroll: true,
       onSuccess: () => closeModal(),
       onError: () => passwordInput.current.focus(),

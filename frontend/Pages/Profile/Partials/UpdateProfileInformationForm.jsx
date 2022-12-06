@@ -17,7 +17,7 @@ export default ({ mustVerifyEmail, status, className }) => {
   const submit = (e) => {
     e.preventDefault()
 
-    patch(route('profile.update'))
+    patch(window.route('profile.update'))
   }
 
   return (
@@ -25,7 +25,7 @@ export default ({ mustVerifyEmail, status, className }) => {
             <header>
                 <h2 className="text-lg font-medium text-gray-900 dark:text-gray-100">Profile Information</h2>
                 <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                    Update your account's profile information and email address.
+                    Update your account&apos;s profile information and email address.
                 </p>
             </header>
             <form onSubmit={submit} className="mt-6 space-y-6">
@@ -60,7 +60,7 @@ export default ({ mustVerifyEmail, status, className }) => {
                         <p className="text-sm mt-2 text-gray-800 dark:text-gray-200">
                             Your email address is unverified.
                             <Link
-                                href={route('verification.send')}
+                                href={window.route('verification.send')}
                                 method="post"
                                 as="button"
                                 className="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"

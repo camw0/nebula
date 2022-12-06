@@ -20,14 +20,14 @@ export default ({ token, email }) => {
     }
   }, [])
 
-  const onHandleChange = (event) => {
-    setData(event.target.name, event.target.value)
+  const onHandleChange = (e) => {
+    setData(e.target.name, e.target.value)
   }
 
   const submit = (e) => {
     e.preventDefault()
 
-    post(route('password.store'))
+    post(window.route('password.store'))
   }
 
   return (

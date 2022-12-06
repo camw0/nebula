@@ -17,7 +17,7 @@ export default ({ status }) => {
   const submit = (e) => {
     e.preventDefault()
 
-    post(route('password.email'))
+    post(window.route('password.email'))
   }
 
   return (

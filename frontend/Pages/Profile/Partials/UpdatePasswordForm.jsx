@@ -19,7 +19,7 @@ export default ({ className }) => {
   const updatePassword = (e) => {
     e.preventDefault()
 
-    put(route('password.update'), {
+    put(window.route('password.update'), {
       preserveScroll: true,
       onSuccess: () => reset(),
       onError: () => {

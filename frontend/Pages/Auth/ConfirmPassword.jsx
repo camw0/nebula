@@ -17,14 +17,14 @@ export default () => {
     }
   }, [])
 
-  const onHandleChange = (event) => {
-    setData(event.target.name, event.target.value)
+  const onHandleChange = (e) => {
+    setData(e.target.name, e.target.value)
   }
 
   const submit = (e) => {
     e.preventDefault()
 
-    post(route('password.confirm'))
+    post(window.route('password.confirm'))
   }
 
   return (
