@@ -1,8 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "cmrxnn/nebula",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "The go-to FOSS billing and client management system.",
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
@@ -15,6 +14,7 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+        "friendsofphp/php-cs-fixer": "^3.13",
         "laravel/breeze": "^1.15",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
@@ -36,6 +36,7 @@
         }
     },
     "scripts": {
+        "cs:fix": "vendor/bin/php-cs-fixer fix app",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
