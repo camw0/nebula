@@ -1,3 +1,4 @@
+import React from 'react'
 import TextInput from '@/Components/TextInput'
 import GuestLayout from '@/Layouts/GuestLayout'
 import InputError from '@/Components/InputError'

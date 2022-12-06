@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import NavLink from '@/Components/NavLink'
+import React, { useState } from 'react'
 import Dropdown from '@/Components/Dropdown'
 import { Link } from '@inertiajs/inertia-react'
-import ResponsiveNavLink from '@/Components/NavLink'
 import ApplicationLogo from '@/Components/ApplicationLogo'
+import { NavLink, ResponsiveNavLink } from '@/Components/NavLink'
 
 export default ({ auth, header, description, children }) => {
   const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false)

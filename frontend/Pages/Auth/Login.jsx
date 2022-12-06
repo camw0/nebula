@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Checkbox from '@/Components/Checkbox'
 import TextInput from '@/Components/TextInput'
 import GuestLayout from '@/Layouts/GuestLayout'

@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from '@inertiajs/inertia-react'
 import ApplicationLogo from '@/Components/ApplicationLogo'
 

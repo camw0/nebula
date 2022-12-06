@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
 export default ({ children, show = false, maxWidth = '2xl', closeable = true, onClose = () => { } }) => {

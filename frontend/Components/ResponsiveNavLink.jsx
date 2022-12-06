@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from '@inertiajs/inertia-react'
 
 export default ({ method = 'get', as = 'a', href, active = false, children }) => (

@@ -1,3 +1,4 @@
+import React from 'react'
 import { Head } from '@inertiajs/inertia-react'
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout'
 

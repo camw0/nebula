@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default ({ type = 'button', className = '', processing, children, onClick }) => (
     <button
         type={type}

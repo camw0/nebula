@@ -1,3 +1,4 @@
+import React from 'react'
 import GuestLayout from '@/Layouts/GuestLayout'
 import PrimaryButton from '@/Components/PrimaryButton'
 import { Head, Link, useForm } from '@inertiajs/inertia-react'
@@ -16,7 +17,7 @@ export default ({ status }) => {
             <Head title="Email Verification" />
             <div className="mb-4 text-sm text-gray-600 dark:text-gray-400">
                 Thanks for signing up! Before getting started, could you verify your email address by clicking on the
-                link we just emailed to you? If you didn't receive the email, we will gladly send you another.
+                link we just emailed to you? If you didn&apos;t receive the email, we will gladly send you another.
             </div>
             {status === 'verification-link-sent' && (
                 <div className="mb-4 font-medium text-sm text-green-600 dark:text-green-400">
