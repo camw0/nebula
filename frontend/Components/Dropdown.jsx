@@ -1,6 +1,6 @@
-import { useState, createContext, useContext, Fragment } from 'react';
 import { Link } from '@inertiajs/inertia-react';
 import { Transition } from '@headlessui/react';
+import { useState, createContext, useContext, Fragment } from 'react';
 
 const DropDownContext = createContext();
 
@@ -24,7 +24,6 @@ const Trigger = ({ children }) => {
     return (
         <>
             <div onClick={toggleOpen}>{children}</div>
-
             {open && <div className="fixed inset-0 z-40" onClick={() => setOpen(false)}></div>}
         </>
     );

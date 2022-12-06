@@ -1,8 +1,8 @@
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+import { Head } from '@inertiajs/inertia-react';
 import DeleteUserForm from './Partials/DeleteUserForm';
 import UpdatePasswordForm from './Partials/UpdatePasswordForm';
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import UpdateProfileInformationForm from './Partials/UpdateProfileInformationForm';
-import { Head } from '@inertiajs/inertia-react';
 
 export default ({ auth, mustVerifyEmail, status }) => (
     <AuthenticatedLayout

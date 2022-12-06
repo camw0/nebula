@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 
-export default function Modal({ children, show = false, maxWidth = '2xl', closeable = true, onClose = () => {} }) {
+export default ({ children, show = false, maxWidth = '2xl', closeable = true, onClose = () => { } }) => {
     const close = () => {
         if (closeable) {
             onClose();
@@ -35,7 +35,6 @@ export default function Modal({ children, show = false, maxWidth = '2xl', closea
                 >
                     <div className="absolute inset-0 bg-gray-500/75 dark:bg-gray-900/75" />
                 </Transition.Child>
-
                 <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-300"

@@ -1,11 +1,11 @@
+import Modal from '@/Components/Modal';
 import { useRef, useState } from 'react';
-import DangerButton from '@/Components/DangerButton';
+import TextInput from '@/Components/TextInput';
 import InputError from '@/Components/InputError';
 import InputLabel from '@/Components/InputLabel';
-import Modal from '@/Components/Modal';
-import SecondaryButton from '@/Components/SecondaryButton';
-import TextInput from '@/Components/TextInput';
 import { useForm } from '@inertiajs/inertia-react';
+import DangerButton from '@/Components/DangerButton';
+import SecondaryButton from '@/Components/SecondaryButton';
 
 export default ({ className }) => {
     const [confirmingUserDeletion, setConfirmingUserDeletion] = useState(false);

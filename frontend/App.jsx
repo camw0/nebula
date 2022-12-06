@@ -3,7 +3,7 @@ import { InertiaProgress } from '@inertiajs/progress';
 import { createInertiaApp } from '@inertiajs/inertia-react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 
-import '../css/app.css';
+import './App.css';
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Nebula';
 
