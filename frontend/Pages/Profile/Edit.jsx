@@ -1,7 +1,7 @@
 import React from 'react'
 import { Head } from '@inertiajs/inertia-react'
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout'
-import DeleteUserForm from '@/Pages/Profule/Partials/DeleteUserForm'
+import DeleteUserForm from '@/Pages/Profile/Partials/DeleteUserForm'
 import UpdatePasswordForm from '@/Pages/Profile/Partials/UpdatePasswordForm'
 import UpdateProfileInformationForm from '@/Pages/Profile/Partials/UpdateProfileInformationForm'
 

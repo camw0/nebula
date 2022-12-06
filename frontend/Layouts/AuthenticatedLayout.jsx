@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Dropdown from '@/Components/Dropdown'
 import { Link } from '@inertiajs/inertia-react'
+import ResponsiveNavLink from '@/Components/NavLink'
 import ApplicationLogo from '@/Components/ApplicationLogo'
-import { NavLink, ResponsiveNavLink } from '@/Components/NavLink'
 
 export default ({ auth, header, description, children }) => {
   const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false)
@@ -20,14 +20,14 @@ export default ({ auth, header, description, children }) => {
                             </div>
 
                             <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <NavLink href={window.route('dashboard')} active={window.route().current('dashboard')}>
+                                <ResponsiveNavLink href={window.route('dashboard')} active={window.route().current('dashboard')}>
                                     Dashboard
-                                </NavLink>
+                                </ResponsiveNavLink>
                             </div>
                             <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <NavLink href={window.route('profile.edit')} active={window.route().current('profile.edit')}>
+                                <ResponsiveNavLink href={window.route('profile.edit')} active={window.route().current('profile.edit')}>
                                     Account
-                                </NavLink>
+                                </ResponsiveNavLink>
                             </div>
                         </div>
 
