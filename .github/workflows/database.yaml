@@ -57,9 +57,3 @@ jobs:
         if: ${{ always() }}
         env:
           DB_HOST: UNIT_NO_DB
-
-      - name: Integration tests
-        run: vendor/bin/phpunit tests/Integration
-        env:
-          DB_PORT: ${{ job.services.database.ports[3306] }}
-          DB_USERNAME: root
