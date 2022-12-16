@@ -13,4 +13,4 @@ use Nebula\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
     return Inertia::render('Admin/Dashboard');
-});
+})->name('admim:dashboard');
