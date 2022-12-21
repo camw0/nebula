@@ -11,7 +11,7 @@
 Nebula is designed to be a simple and minimalist dashboard which integrates with many platforms such as Teams, Discord, DuckDuckGo and many more social platforms. Nebula is built using Laravel 9 and React using Vite to build.
 
 ## Quick Start
-Nebula is available at the [Nebula Site](nebula.cmrxnn.me).
+Nebula is available at the [Nebula Site](https://nebula.cmrxnn.me).
 
 ## Self Hosting
 Read the instructions for installing Nebula at [Nebula Documentation](https://github.com/cmrxnn/nebula).
